@@ -49,6 +49,12 @@ a {
   align-items: center;
 }
 
+.identificacao{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
 .logo-nome {
   display: flex;
   align-items: center;
@@ -91,6 +97,16 @@ a {
 .conteudo-apresentacao {
   min-height: 430px;
   row-gap: 60px;
+}
+
+.nome{
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.sobrenome{
+  color: var(--primary);
+  font-weight: bold;
 }
 
 .texto-apresentacao {
@@ -390,7 +406,13 @@ section {
   background: linear-gradient(135deg, #101928, #173957);
 }
 
-.logo-rodape{
+.rodape-final {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-rodape {
   width: 64px;
   height: 64px;
   object-fit: contain;
@@ -415,8 +437,22 @@ section {
 
 .links-rodape {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 18px;
   font-weight: 800;
+}
+
+.links-rodape a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.links-rodape img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 
 .links-rodape a:hover {
